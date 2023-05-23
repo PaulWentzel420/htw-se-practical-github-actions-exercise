@@ -26,15 +26,15 @@ jobs:
       with:
         python-version: '3.x'
 
-    # step 3 - run tests
-    - name: Test with Python
-      run: |
-        cd example-python
-        python3 -m unittest tests.test_town.TestTown
-
-    # step 4 - Version check
+    # step 3 - Version check
       - name: Check versions
         run: | 
             echo "check versions:"
             git --version
             python -version
+            
+    # step 4 - run tests
+    - name: Test with Python
+      run: |
+        cd example-python
+        python3 -m unittest tests.test_town.TestTown
