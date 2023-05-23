@@ -56,7 +56,7 @@ class TestTown(unittest.TestCase):
         - residents: cannot be less 0
         """
         # constructor equals get
-        t = Town(self.testValue1Name, -1)
+        t = Town(self.testValue1Name, 420)
         self.assertFalse(t.residents < 0)
         # set equals get
         t.residents = -2
