@@ -31,3 +31,7 @@ jobs:
       run: |
         cd example-python
         python3 -m unittest tests.test_town.TestTown
+
+    # step 4 - check
+    - name: check
+      run: python --version
