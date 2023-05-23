@@ -31,3 +31,10 @@ jobs:
       run: |
         cd example-python
         python3 -m unittest tests.test_town.TestTown
+
+    # step 4 - Version check
+      - name: Check versions
+        run: | 
+            echo "check versions:"
+            git --version
+            python -version
