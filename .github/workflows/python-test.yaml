@@ -31,7 +31,7 @@ jobs:
         run: | 
             echo "check versions:"
             git --version
-            python -version
+            python --version
             
     # step 4 - run tests
     - name: Test with Python
